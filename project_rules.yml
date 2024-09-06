@@ -1,0 +1,84 @@
+# Cursor Rule File for Next.js with shadcn/ui
+
+# Project Setup
+setup:
+  - Use 'create-next-app' to initialize a new Next.js project
+  - Choose TypeScript as the language
+  - Use the App Router for routing
+  - Set up TailwindCSS for styling
+
+# Dependencies
+dependencies:
+  - Install shadcn/ui: npx shadcn-ui@latest init
+  - Follow the prompts to set up shadcn/ui with your project
+
+# File Structure
+structure:
+  - Use the App Router structure (app directory)
+  - Create a 'components' directory for reusable components
+  - Create a 'lib' directory for utility functions and constants
+
+# Component Guidelines
+components:
+  - Use shadcn/ui components when possible
+  - Create custom components in the 'components' directory
+  - Use TypeScript for all component definitions
+  - Implement responsive design using Tailwind classes
+
+# Styling
+styling:
+  - Use Tailwind CSS for styling
+  - Customize the Tailwind config as needed
+  - Use shadcn/ui's theming capabilities for consistent design
+
+# State Management
+state:
+  - Use React hooks for local state management
+  - Consider using Zustand or Jotai for global state if needed
+
+# API Integration
+api:
+  - Use Next.js API routes for backend functionality
+  - Implement API calls using fetch or a library like axios
+
+# Performance
+performance:
+  - Use Next.js Image component for optimized images
+  - Implement code splitting and lazy loading where appropriate
+
+# Accessibility
+accessibility:
+  - Ensure proper semantic HTML usage
+  - Use ARIA attributes when necessary
+  - Test with keyboard navigation
+
+# Testing
+testing:
+  - Set up Jest for unit testing
+  - Use React Testing Library for component tests
+  - Implement end-to-end tests using Cypress or Playwright
+
+# Deployment
+deployment:
+  - Deploy to Vercel for optimal Next.js hosting
+  - Set up environment variables for sensitive information
+
+# Best Practices
+best_practices:
+  - Follow the Next.js documentation for best practices
+  - Use ESLint and Prettier for code formatting and linting
+  - Implement proper error handling and loading states
+  - Use TypeScript strictly to catch type-related errors
+  - Write clear and concise comments for complex logic
+
+# Version Control
+version_control:
+  - Use Git for version control
+  - Create meaningful commit messages
+  - Use feature branches for new features or major changes
+
+# Documentation
+documentation:
+  - Maintain a README.md with project setup and run instructions
+  - Document any complex logic or architectural decisions
+  - Keep component props well-documented with TypeScript interfaces
