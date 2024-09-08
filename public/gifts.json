@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "Handcrafted Wooden Puzzle Box",
+    "description": "Intricate Japanese puzzle box with hidden compartments",
+    "category": "Home Decor",
+    "origin": "Japan",
+    "price": 49.99,
+    "image": "/placeholder.svg?height=200&width=200",
+    "relationship": "Friend"
+  },
+  {
+    "id": "2",
+    "name": "Artisanal Chocolate Collection",
+    "description": "Assorted Belgian chocolates in a luxurious gift box",
+    "category": "Food & Beverage",
+    "origin": "Belgium",
+    "price": 34.95,
+    "minPrice": 29.99,
+    "maxPrice": 39.99,
+    "image": "/placeholder.svg?height=200&width=200",
+    "relationship": "Family"
+  },
+  {
+    "id": "3",
+    "name": "Hand-painted Silk Scarf",
+    "description": "Vibrant hand-painted silk scarf with traditional Indian motifs",
+    "category": "Fashion",
+    "origin": "India",
+    "price": 79.99,
+    "image": "/placeholder.svg?height=200&width=200",
+    "relationship": "Partner"
+  },
+  {
+    "id": "4",
+    "name": "Vintage Leather-bound Journal",
+    "description": "Handcrafted Italian leather journal with premium paper",
+    "category": "Stationery",
+    "origin": "Italy",
+    "price": 29.99,
+    "image": "/placeholder.svg?height=200&width=200",
+    "relationship": "Colleague"
+  },
+  {
+    "id": "5",
+    "name": "Aromatherapy Essential Oil Set",
+    "description": "Set of premium French essential oils for relaxation",
+    "category": "Wellness",
+    "origin": "France",
+    "price": 54.95,
+    "minPrice": 49.99,
+    "maxPrice": 59.99,
+    "image": "/placeholder.svg?height=200&width=200",
+    "relationship": "Self"
+  },
+  {
+    "id": "6",
+    "name": "Handblown Glass Vase",
+    "description": "Elegant handblown glass vase from Czech artisans",
+    "category": "Home Decor",
+    "origin": "Czech Republic",
+    "price": 89.99,
+    "image": "/placeholder.svg?height=200&width=200",
+    "relationship": "Friend"
+  }
+]
