@@ -15,20 +15,20 @@ const giftingGuides = [
 
 export default function FeaturedContent() {
   return (
-    <section className="py-12">
+    <section className="py-8 sm:py-12 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8">Featured Content</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-gray-900">Featured Content</h2>
+        <div className="grid grid-cols-1 gap-8">
           <div>
-            <h3 className="text-2xl font-semibold mb-4">Traveler&apos;s Tales</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Traveler&apos;s Tales</h3>
             {featuredArticles.map((article) => (
-              <Card key={article.id} className="mb-4">
+              <Card key={article.id} className="mb-4 border border-gray-200">
                 <CardHeader>
-                  <CardTitle>{article.title}</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl text-gray-800">{article.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>{article.excerpt}</p>
-                  <Link href={`/stories/${article.id}`} className="text-blue-500 hover:underline mt-2 inline-block">
+                  <p className="text-sm sm:text-base text-gray-600">{article.excerpt}</p>
+                  <Link href={`/stories/${article.id}`} className="text-blue-600 hover:text-blue-800 mt-2 inline-block text-sm sm:text-base">
                     Read more
                   </Link>
                 </CardContent>
@@ -36,11 +36,11 @@ export default function FeaturedContent() {
             ))}
           </div>
           <div>
-            <h3 className="text-2xl font-semibold mb-4">Gifting Guides</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Gifting Guides</h3>
             <ul className="space-y-2">
               {giftingGuides.map((guide) => (
                 <li key={guide.id}>
-                  <Link href={guide.link} className="text-blue-500 hover:underline">
+                  <Link href={guide.link} className="text-blue-600 hover:text-blue-800 text-sm sm:text-base">
                     {guide.title}
                   </Link>
                 </li>

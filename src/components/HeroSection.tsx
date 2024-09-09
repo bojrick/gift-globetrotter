@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import SubmitGiftForm from './SubmitGiftForm';
 
 const mainPhrases = [
   "From Earth to Everywhere, One Gift at a Time",
@@ -47,39 +46,39 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="relative min-h-[70vh] flex items-center justify-center bg-black text-white dark:bg-white dark:text-black py-8">
-      <div className="text-center z-10 px-4">
+    <div className="relative h-[70vh] sm:h-[80vh] flex items-center justify-center overflow-hidden">
+      <div className="z-10 text-center px-4 sm:px-6 lg:px-8">
         <AnimatePresence mode="wait">
           <motion.h1
             key={currentMainPhrase}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="text-2xl sm:text-4xl font-bold mb-4"
           >
             {mainPhrases[currentMainPhrase]}
           </motion.h1>
         </AnimatePresence>
-        <div className="h-20 mb-6">
-          <AnimatePresence mode="wait">
-            <motion.p
-              key={currentSubPhrase}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="text-lg sm:text-2xl text-gray-300 dark:text-gray-700"
-            >
-              {subPhrases[currentSubPhrase]}
-            </motion.p>
-          </AnimatePresence>
-        </div>
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <Button size="lg" asChild className="bg-white text-black border-2 border-white hover:bg-gray-100 dark:bg-black dark:text-white dark:border-black dark:hover:bg-gray-900">
-            <Link href="/explore-gifts">Start Exploring</Link>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={currentSubPhrase}
+            className="text-base sm:text-lg md:text-xl text-gray-300 mb-4 sm:mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+          >
+            {subPhrases[currentSubPhrase]}
+          </motion.p>
+        </AnimatePresence>
+        <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+          <Button size="lg" asChild className="bg-white text-black hover:bg-gray-200">
+            <Link href="/explore-gifts">Explore Gifts</Link>
           </Button>
-          <SubmitGiftForm />
+          <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-black">
+            <Link href="/submit-gift">Submit a Gift Idea</Link>
+          </Button>
         </div>
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black dark:to-white opacity-50"></div>
